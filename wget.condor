@@ -1,0 +1,13 @@
+universe 	= vanilla
+executable 	= /usr/bin/wget
+arguments	= https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/x.c
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+queue 1
+
+arguments       = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/y.c
+queue 1
+
+arguments       = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/z.c
+queue 1
+
