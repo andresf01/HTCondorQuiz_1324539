@@ -1,5 +1,7 @@
 Job wget wget.condor
 Job compilar compilar.condor
-Job ejecutar ejecutar.condor
+Job ejecutar1 ejecutar1.condor
+Job ejecutar2 ejecutar2.condor
+Job ejecutar3 ejecutar3.condor
 PARENT wget CHILD compilar
-PARENT compilar CHILD ejecutar
+PARENT compilar CHILD ejecutar1 ejecutar2 ejecutar3
